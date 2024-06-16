@@ -3,8 +3,10 @@
 use App\Http\Controllers\AttendanceController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [AttendanceController::class, 'attendance']);
+
+Route::get('/register', [AttendanceController::class, 'register']);
+
 
 Route::middleware('auth')->group(function () {
-    Route::get('/register', [AttendanceController::class, 'register']);
+    Route::get('/', [AttendanceController::class, 'attendance']);
 });
