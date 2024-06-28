@@ -19,9 +19,11 @@
         <div class="header-nav">
             @if (Auth::check())
             <li class="header-nav__item">
-                <a class="header-nav__link" href="/comfirm">ホーム</a>
+                <a class="header-nav__link" href="/">ホーム</a>
             </li>
-            
+            <li class="header-nav__item">
+                <a class="header-nav__link" href="/comfirm">日付一覧</a>
+            </li>
             <li class="header-nav__item">
                 <form action="/logout" method="post">
                     @csrf
