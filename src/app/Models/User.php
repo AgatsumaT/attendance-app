@@ -41,7 +41,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function timestamp()
+    public function timestamps()
     {
         return $this->hasMany(Timestamp::class);
     }

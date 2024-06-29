@@ -15,14 +15,26 @@
             <form action="{{ route('timestamp/punchin') }}" method="POST">
                 @csrf
                 @method('POST')
-                <button type="submit" class="btn-punchin">勤務開始</button>
+                <div class="form__item">
+                    {{-- @if($status == 0) --}}
+                    <button class="form__item-button" type="submit" name="btn-punchin">勤務開始</button>
+                    {{-- @else
+                    <button class="form__item-button" type="submit" name="btn-punchin" disabled>勤務開始</button>
+                    @endif --}}
+                </div>
             </form>
         </li>
         <li>
             <form action="{{ route('timestamp/punchout') }}" method="POST">
                 @csrf
                 @method('POST')
-                <button type="submit" class="btn-punchout">勤務終了</button>
+                <div class="form__item">
+                    {{-- @if($status == 1) --}}
+                    <button class="form__item-button" type="submit" name="btn-punchout">勤務終了</button>
+                    {{-- @else
+                    <button class="form__item-button" type="submit" name="btn-punchout" disabled>勤務終了</button>
+                    @endif --}}
+                </div>
             </form>
         </li>
 
@@ -30,14 +42,26 @@
             <form action="{{ route('breakstamp/breakin') }}" method="POST">
                 @csrf
                 @method('POST')
-                <button type="submit" class="btn-breakin">休憩開始</button>
+                <div class="form__item">
+                    {{-- @if($status == 1) --}}
+                    <button class="form__item-button" type="submit" name="btn-breakin">休憩開始</button>
+                    {{-- @else
+                    <button class="form__item-button" type="submit" name="btn-breakin" disabled>休憩開始</button>
+                    @endif --}}
+                </div>
             </form>
         </li>
         <li>
             <form action="{{ route('breakstamp/breakout') }}" method="POST">
                 @csrf
                 @method('POST')
-                <button type="submit" class="btn-breakout">休憩終了</button>
+                <div class="form__item">
+                    {{-- @if($status == 2) --}}
+                    <button class="form__item-button" type="submit" name="btn-breakout">休憩終了</button>
+                    {{-- @else
+                    <button class="form__item-button" type="submit" name="btn-breakout" disabled>休憩終了</button>
+                    @endif --}}
+                </div>
             </form>
         </li>
 

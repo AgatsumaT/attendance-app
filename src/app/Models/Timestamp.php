@@ -9,14 +9,19 @@ class Timestamp extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'punchIn', 'punchOut'];
+    protected $fillable = [
+        'user_id',
+        'punchIn',
+        'punchOut'
+    ];
 
-    /**
-     * ユーザー関連付け
-     * 1対多
-     */
     public function user()
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function breakstamps()
+    {
+        return $this->hasMany(Breakstamp::class, 'work_id');
     }
 }

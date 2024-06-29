@@ -9,14 +9,14 @@ class Breakstamp extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'breakIn', 'breakOut'];
+    protected $fillable = [
+        'user_id',
+        'breakIn',
+        'breakOut'
+    ];
 
-    /**
-     * ユーザー関連付け
-     * 1対多
-     */
-    public function user()
+    public function timestamps()
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(timestamp::class);
     }
 }

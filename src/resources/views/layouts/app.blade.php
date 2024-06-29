@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="app">
-        <header class="header">
-            <h1 class="header__heading">Atte</h1>
-            @yield('link')
-        </header>
+    <header>
+        <div class="header__logo">
+            Atte
+        </div>
+        @yield('link')
         <div class="header-nav">
             @if (Auth::check())
             <li class="header-nav__item">
@@ -32,11 +32,21 @@
             </li>
             @endif
         </div>
+    </header>
 
+    <main>
         <div class="content">
             @yield('content')
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="footer__item">
+            <small class="footer__text">
+                Atte,inc.
+            </small>
+        </div>
+    </footer>
 </body>
 
 </html>
