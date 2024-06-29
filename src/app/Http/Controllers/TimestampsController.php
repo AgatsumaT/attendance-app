@@ -58,10 +58,12 @@ class TimestampsController extends Controller
         return redirect()->back()->with('my_status', '退勤打刻が完了しました');
     }
 
+    //休憩開始
     public function breakIn()
     {
     }
 
+    //休憩終了
     public function breakOut()
     {
     }

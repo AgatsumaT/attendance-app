@@ -15,7 +15,7 @@ class CreateTimestampsTable extends Migration
     {
         Schema::create('timestamps', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned()->index();
+            $table->bigInteger('user_id')->unsigned();
             $table->dateTime('punchIn');
             $table->dateTime('punchOut')->nullable();
             $table->timestamps();
