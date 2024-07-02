@@ -7,12 +7,13 @@
 <div class="header__wrap">
     @csrf
     <button class="date__change-button" name="prevDate">
-        < < /button>
-            <input type="hidden" name="displayDate" value="{{ $displayDate }}">
-            <p class="header__text">{{ $displayDate->format('Y-m-d') }}</p>
-            <button class="date__change-button" name="nextDate">
-                >
-            </button>
+        < 
+        < /button>
+    <input type="hidden" name="displayDate" value="{{ $displayDate }}">
+        <p class="header__text">{{ $displayDate->format('Y-m-d') }}</p>
+    <button class="date__change-button" name="nextDate">
+        >
+    </button>
 </div>
 
 <div class="search__item">
