@@ -1,1 +1,1 @@
-![ER図 image](/home/agatsumat/coachtech/laravel/attendance-app/index.png)
+![ER_image](/home/agatsumat/coachtech/laravel/attendance-app/index.png)
