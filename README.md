@@ -1,1 +1,1 @@
-![ER_image](/home/agatsumat/coachtech/laravel/attendance-app/index.png)
+![ER_image](vscode-remote://wsl%2Bubuntu/home/agatsumat/coachtech/laravel/attendance-app/index.png)
