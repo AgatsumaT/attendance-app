@@ -22,8 +22,8 @@
 6. ~~`php artisan db:seed`~~
 
 ・Carbonのインストール
-1．phpコンテナ上でなければ、 `docker-compose exec php bash` 
-2．`composer require nesbot/carbon` にてインストール
+1.phpコンテナ上でなければ、 `docker-compose exec php bash`
+2.`composer require nesbot/carbon` にてインストール
 
 ## 機能一覧
 - ログイン・ログアウト機能
