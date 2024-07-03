@@ -1,0 +1,1 @@
+/home/agatsumat/coachtech/laravel/attendance-app/index.png
